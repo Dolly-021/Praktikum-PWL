@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
       <div class="col-md-8 col-lg-6">
         <div class="mb-3">
-          <label for="task" class="form-label text-success fw-bold">Update</label>
+          <label for="task" class="form-label text-success fw-bold">Add To do List</label>
           <input 
             name="task" 
             type="text" 

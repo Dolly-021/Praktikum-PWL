@@ -24,14 +24,15 @@
                         <p class="mb-1">{{ $task->tanggal }}</p>
                     </div>
                     <div>
+                        <button class="btn btn-sm btn-secondary" title="View">View</button>
+                        <a href="{{route('todolist.edit', $task->id)}}" class="btn btn-sm btn-warning" title="Edit">Edit</a>
                         <form action="{{ route('todolist.delete', $task->id) }}" method="POST" style="display:inline;">
     @csrf
     @method('DELETE')
-    <button type="submit" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus?')">Delete</button>
+    <button type="submit" class="btn btn-sm btn-success">Done</button>
 </form>
 
-                        <a href="{{route('todolist.edit', $task->id)}}" class="btn btn-sm btn-warning" title="Edit">Edit</a>
-                    <button class="btn btn-sm btn-success" title="Done">Done</button>
+                    <!-- <button class="btn btn-sm btn-success" title="Done">Done</button> -->
                     </div>
                 </div>
             </div>
